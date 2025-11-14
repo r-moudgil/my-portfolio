@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove `turbo` — it is only for local dev (Turbopack is used automatically on Vercel if supported)
-  webpack(config: any) {
-    return config;
-  },
+  turbopack: {}, // ✅ enable Turbopack cleanly
 };
 
-module.exports = nextConfig;
+export default nextConfig;
